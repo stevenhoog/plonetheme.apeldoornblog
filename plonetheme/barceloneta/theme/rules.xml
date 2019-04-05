@@ -30,8 +30,10 @@
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
-  <!-- move global nav -->
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+  <!-- replace theme navbar-nav with Plone plone-navbar-nav -->
+  <replace
+        css:theme-children=".cd-primary-nav"
+        css:content-children=".plone-navbar-nav" />
 
   <!-- move hero to top -->
   <replace css:theme-children="#hero .gigantic" css:content-children=".hero"/>
