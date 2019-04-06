@@ -41,7 +41,7 @@
   <drop css:content=".hero" />
 
   <!-- Central column -->
-  <replace css:theme="#content-container" method="raw">
+  <replace css:theme=".content-container" method="raw">
 
     <xsl:variable name="central">
       <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6 col-md-push-3</xsl:if>
